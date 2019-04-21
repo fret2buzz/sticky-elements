@@ -23,10 +23,10 @@
 
 .row {
 	display: -webkit-box;
-	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-flow: row nowrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
 	-ms-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	background: #ffc;
@@ -41,7 +41,6 @@
 
 .col-xs-6 {
 	width: 50%;
-	height: 800px;
 }
 
 .col-xs-4 {
@@ -52,7 +51,11 @@
 	width: 16.66%;
 }
 
-.header,
+.header {
+	height: 50px;
+	background: #ddd;
+}
+
 .footer {
 	height: 250px;
 	background: #ccc;
@@ -60,12 +63,10 @@
 
 .box1 {
 	background: #fcc;
-	height: 250px;
 	border: 1px solid #c33;
 }
 
 .box2 {
 	background: #ffefff;
-	height: 150px;
 	border: 1px solid #c33;
 }

@@ -11,18 +11,26 @@
 <body>
 
     <div class="wrapper">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eaque suscipit et, nostrum hic quam culpa sed voluptates sit, expedita exercitationem nihil quidem non sint accusantium beatae temporibus, rem ipsum.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eaque suscipit et, nostrum hic quam culpa sed voluptates sit, expedita exercitationem nihil quidem non sint accusantium beatae temporibus, rem ipsum.</div>
         <div class="header">Header</div>
         <div class="row sticky-container">
             <div class="col-xs-2">
-                <div class="box1">
-                    Box
+                <div class="box1" style="height: 100px; overflow: hidden;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aspernatur voluptatibus velit ullam optio magni cumque in iusto amet dolore, dolores veritatis, architecto animi debitis laudantium neque, eius quibusdam fuga.
                 </div>
+                <div style="height: 400px; overflow: hidden;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eaque suscipit et, nostrum hic quam culpa sed voluptates sit, expedita exercitationem nihil quidem non sint accusantium beatae temporibus, rem ipsum.</div>
             </div>
             <div class="col-xs-6">&nbsp;</div>
             <div class="col-xs-4">
+
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eaque suscipit et, nostrum hic quam culpa sed voluptates sit, expedita exercitationem nihil quidem non sint accusantium beatae temporibus, rem ipsum.</div>
                 <div class="box2">
-                    Box
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero beatae officiis optio, ducimus sunt asperiores. Architecto nesciunt in facere voluptates, non, possimus, mollitia quos numquam blanditiis id perferendis quaerat atque.
                 </div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eaque suscipit et, nostrum hic quam culpa sed voluptates sit, expedita exercitationem nihil quidem non sint accusantium beatae temporibus, rem ipsum.</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eaque suscipit et, nostrum hic quam culpa sed voluptates sit, expedita exercitationem nihil quidem non sint accusantium beatae temporibus, rem ipsum.</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eaque suscipit et, nostrum hic quam culpa sed voluptates sit, expedita exercitationem nihil quidem non sint accusantium beatae temporibus, rem ipsum.</div>
             </div>
         </div>
         <div class="footer">Footer</div>
@@ -30,12 +38,17 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $(".box1").stickyElements({
-            top: 20,
+            top: 50,
             container: '.sticky-container'
         });
         $(".box2").stickyElements({
             top: 50,
             container: '.sticky-container'
+        });
+        $(".header").stickyElements({
+            top: 0,
+            container: '.wrapper',
+            zIndex: 111
         });
     });
 </script>
